@@ -1,14 +1,15 @@
 package com.example.ecommerce.presenters.quarkus.dto;
 
 import com.example.ecommerce.core.usecase.CreateOrderRequestModel;
-
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * HTTP Request DTO for the Quarkus-style JAX-RS resource.
- * Converts JSON body → core CreateOrderRequestModel.
- */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class OrderRequest {
 
     private String customerId;
@@ -23,11 +24,4 @@ public class OrderRequest {
                 .collect(Collectors.toList());
         return new CreateOrderRequestModel(customerId, modelItems, paymentToken);
     }
-
-    public String getCustomerId() { return customerId; }
-    public void setCustomerId(String customerId) { this.customerId = customerId; }
-    public List<OrderItemRequest> getItems() { return items; }
-    public void setItems(List<OrderItemRequest> items) { this.items = items; }
-    public String getPaymentToken() { return paymentToken; }
-    public void setPaymentToken(String paymentToken) { this.paymentToken = paymentToken; }
 }
