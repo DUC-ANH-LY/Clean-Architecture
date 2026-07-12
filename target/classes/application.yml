@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    active: sql,stripe   # Switch to nosql,vnpay to change implementations
+
+  # SQL (H2 in-memory) — active when profile = sql
+  datasource:
+    url: jdbc:h2:mem:ecommercedb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  # MongoDB — active when profile = nosql
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ecommercedb
+
+# Payment credentials
+stripe:
+  secret-key: sk_test_your_stripe_key_here
+
+vnpay:
+  tmn-code: YOUR_VNPAY_TMN_CODE
+  hash-secret: YOUR_VNPAY_HASH_SECRET
+  url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+
+server:
+  port: 8080
