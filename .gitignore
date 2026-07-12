@@ -1,0 +1,35 @@
+# Target build directory
+target/
+work/
+bin/
+
+# IntelliJ IDEA project files
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+.metadata/
+
+# VS Code project files
+.vscode/
+
+# Maven wrapper (can be kept or ignored, usually kept but we ignore temp files)
+.mvn/wrapper/maven-wrapper.jar
+
+# Quarkus specific files
+.quarkus/
+
+# Environment files and credentials
+.env
+*.properties.local
+*.yml.local
+
+# OS files
+.DS_Store
+Thumbs.db
