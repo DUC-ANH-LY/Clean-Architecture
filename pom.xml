@@ -119,7 +119,7 @@
                             <excludes>
                                 <exclude>**/presenters/quarkus/**</exclude>
                                 <exclude>**/config/quarkus/**</exclude>
-                                <exclude>**/infra/**/quarkus/**</exclude>
+                                <exclude>**/infra/quarkus/**</exclude>
                             </excludes>
                         </configuration>
                     </plugin>
@@ -144,9 +144,7 @@
                             <excludes>
                                 <exclude>**/presenters/spring/**</exclude>
                                 <exclude>**/config/spring/**</exclude>
-                                <exclude>**/infra/**/spring/**</exclude>
-                                <exclude>**/infra/persistence/nosql/**</exclude>
-                                <exclude>**/infra/persistence/sql/repository/**</exclude>
+                                <exclude>**/infra/spring/**</exclude>
                                 <exclude>**/EcommerceApplication.java</exclude>
                             </excludes>
                         </configuration>
