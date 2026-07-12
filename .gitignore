@@ -19,8 +19,10 @@ out/
 # VS Code project files
 .vscode/
 
-# Maven wrapper (can be kept or ignored, usually kept but we ignore temp files)
-.mvn/wrapper/maven-wrapper.jar
+# Maven wrapper
+mvnw
+mvnw.cmd
+.mvn/
 
 # Quarkus specific files
 .quarkus/
