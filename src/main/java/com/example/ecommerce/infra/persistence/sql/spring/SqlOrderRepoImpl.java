@@ -1,11 +1,11 @@
-package com.example.ecommerce.infra.persistence.sql;
+package com.example.ecommerce.infra.persistence.sql.spring;
 
 import com.example.ecommerce.core.entity.Order;
 import com.example.ecommerce.core.entity.OrderItem;
 import com.example.ecommerce.core.usecase.OrderRepoI;
 import com.example.ecommerce.infra.persistence.sql.entity.OrderItemJpaEntity;
 import com.example.ecommerce.infra.persistence.sql.entity.OrderJpaEntity;
-import com.example.ecommerce.infra.persistence.sql.repository.SpringDataOrderJpaRepository;
+import com.example.ecommerce.infra.persistence.sql.spring.repository.SpringDataOrderJpaRepository;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 

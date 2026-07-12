@@ -1,9 +1,9 @@
-package com.example.ecommerce.infra.persistence.nosql;
+package com.example.ecommerce.infra.persistence.nosql.spring;
 
 import com.example.ecommerce.core.entity.Product;
 import com.example.ecommerce.core.usecase.ProductRepoI;
-import com.example.ecommerce.infra.persistence.nosql.document.ProductDocument;
-import com.example.ecommerce.infra.persistence.nosql.repository.SpringDataProductMongoRepository;
+import com.example.ecommerce.infra.persistence.nosql.spring.document.ProductDocument;
+import com.example.ecommerce.infra.persistence.nosql.spring.repository.SpringDataProductMongoRepository;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 

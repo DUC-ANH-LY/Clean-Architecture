@@ -1,10 +1,10 @@
-package com.example.ecommerce.infra.persistence.nosql;
+package com.example.ecommerce.infra.persistence.nosql.spring;
 
 import com.example.ecommerce.core.entity.Order;
 import com.example.ecommerce.core.entity.OrderItem;
 import com.example.ecommerce.core.usecase.OrderRepoI;
-import com.example.ecommerce.infra.persistence.nosql.document.OrderDocument;
-import com.example.ecommerce.infra.persistence.nosql.repository.SpringDataOrderMongoRepository;
+import com.example.ecommerce.infra.persistence.nosql.spring.document.OrderDocument;
+import com.example.ecommerce.infra.persistence.nosql.spring.repository.SpringDataOrderMongoRepository;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.example.ecommerce.infra.persistence.sql;
+package com.example.ecommerce.infra.persistence.sql.spring;
 
 import com.example.ecommerce.core.usecase.InventoryRepoI;
-import com.example.ecommerce.infra.persistence.sql.repository.SpringDataProductJpaRepository;
+import com.example.ecommerce.infra.persistence.sql.spring.repository.SpringDataProductJpaRepository;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
