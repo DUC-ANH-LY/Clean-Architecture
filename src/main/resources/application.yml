@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: sql,stripe   # Switch to nosql,vnpay to change implementations
+    active: nosql,stripe   # Switch to nosql,vnpay to change implementations
 
   # SQL (H2 in-memory) — active when profile = sql
   datasource:
@@ -26,6 +26,8 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/ecommercedb
+      auto-index-creation: true
+
 
 # Payment credentials
 stripe:
